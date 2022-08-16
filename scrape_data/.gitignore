@@ -1,2 +1,11 @@
 #Adding config.py file
 config.py
+
+#Adding csv files
+Restaurants_reviews.csv
+
+#Adding version1 of ipynb
+Scraping_restaurants_YELP_APIv1.ipynb 
+
+#Adding txt files
+jesus_text.txt
