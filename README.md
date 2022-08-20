@@ -133,11 +133,10 @@ EDA:
 
 # Other details of the project
 
-* Technologies
-    Python API's
-    
+*Technologies*
+   Python API's
 
-* Tools
-    Python libraries
-    Scikit-learn libraries
-    Plotly
+*Tools*
+   Python libraries
+   Scikit-learn libraries
+   Plotly
