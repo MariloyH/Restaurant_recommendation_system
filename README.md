@@ -5,7 +5,11 @@ We decided to implement a Restaurant Recommendation System, due Recomendation Sy
 
 Imagine yo. u are in new city and you need to eat someting. If you have a friende in that city, mabybe yo will call to ypur friend for asking a place to eat in town, according toyou preferences. But, what happened if it is you do not have any friends that lived in that town. You will neeed Your personal an artificial friend: Your personal recommendations system.
 
-This project its intended for a Traveler as an app or html page that gives restaurants or places to visit based in his preferences and  his location. We will define San Francisco, California. 
+This project its intended for a Traveler as an app or html page that gives restaurants or places to visit based in his preferences and  his location. We will define San Francisco, California.
+
+View our presentation here
+{google_docs}https://docs.google.com/presentation/d/1ZlSZUL6SJBcRnLjmMwqcynuWotso9JrDRmxAZ9-IRTA/edit#slide=id.p1{/google_docs}
+
 # Descripction of the source of data.
 We will us Yelp API bussiness directory. Yelp.com  website and Yelp mobile appp which publish crowd-sources reviews about bussinesses. 
 
