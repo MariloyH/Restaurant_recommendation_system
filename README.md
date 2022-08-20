@@ -7,8 +7,8 @@ Imagine yo. u are in new city and you need to eat someting. If you have a friend
 
 This project its intended for a Traveler as an app or html page that gives restaurants or places to visit based in his preferences and  his location. We will define San Francisco, California.
 
-View our presentation here
-{google_docs}https://docs.google.com/presentation/d/1ZlSZUL6SJBcRnLjmMwqcynuWotso9JrDRmxAZ9-IRTA/edit#slide=id.p1{/google_docs}
+View our presentation here:
+Presentation: <a href='https://docs.google.com/presentation/d/1ZlSZUL6SJBcRnLjmMwqcynuWotso9JrDRmxAZ9-IRTA/edit#slide=id.p1{/google_docs'> Recommendation System </a>
 
 # Descripction of the source of data.
 We will us Yelp API bussiness directory. Yelp.com  website and Yelp mobile appp which publish crowd-sources reviews about bussinesses. 
