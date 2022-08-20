@@ -26,7 +26,7 @@ In conclusion this project will be a traveler solution platform to help resolve 
 
 Our plattform schema:
 
-![diagram](/Resources/Diagram2.png)
+![diagram](/Resources/diagram2.png)
 
 We selected San Francisco, California which is one of the most important touristic places in the world and is also rated as one of the World’s best cities.
 
