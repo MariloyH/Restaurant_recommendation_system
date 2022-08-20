@@ -12,7 +12,11 @@ Travel is a fun activity, and we always want to enjoy that time to the fullest, 
 
 Another point to take in mind is who’s making the recommendations, we don´t all have a friend that lives in every city we visit, and for that reason this tool will be your local buddy, since our source of information will be obtained from data bases created by actual users, assuring no bias on our recommendations. 
 
-The Restaurant Recommendation System will discover data patterns by grouping two kinds of information: 1. Restaurant Data, by taking into account different variables like number. of ratings, number of reviews, type of cuisine and location. 2.  User preferences, by using the keywords of the recommendations from other users it will search and cluster restaurants that matches user interests.
+The Restaurant Recommendation System will discover data patterns by grouping two kinds of information:
+
+    * Restaurant Data, by taking into account different variables like number. of ratings, number of reviews, type of cuisine and location. 
+    
+    * User preferences, by using the keywords of the recommendations from other users it will search and cluster restaurants that matches user interests.
 
 These Machine Learning algorithms will cluster information from a huge pool of data, by grouping it based on patterns in the data set with the input of consumer choices and restaurant information; producing outcomes that co-relate to their needs and interests.
 
@@ -22,12 +26,15 @@ In conclusion this project will be a traveler solution platform to help resolve 
 
 Our plattform schema:
 
-![diagram](/Resources/Diagram.png)
+![diagram](/Resources/Diagram2.png)
 
 We selected San Francisco, California which is one of the most important touristic places in the world and is also rated as one of the World’s best cities.
 
 * More than 4,300 restaurants
 * Tourism: On 2022 it will receive around 21 million visitors
+
+### Presentation:
+
 View our presentation here: <a href='https://docs.google.com/presentation/d/1ZlSZUL6SJBcRnLjmMwqcynuWotso9JrDRmxAZ9-IRTA/edit#slide=id.p1{/google_docs'> Recommendation System </a>
 
 ## Description of the source of data
