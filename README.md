@@ -20,6 +20,10 @@ In conclusion this project will be a traveler solution platform to help resolve 
 
 # Name: Foodiefy – Recommendations from your local digital buddy 
 
+Our plattform schema:
+
+![diagram](/Resources/Diagram.png)
+
 We selected San Francisco, California which is one of the most important touristic places in the world and is also rated as one of the World’s best cities.
 
 * More than 4,300 restaurants
@@ -43,19 +47,31 @@ EDA:
 
 * Number of ratings:
 
-![rating](/XXXXXX)
+![rating](/Resources/rating.png)
 
 * Top Eleven Restaurants:
 
-![Topeleven](/XXXXXX)
+![Topeleven](/Resources/topeleven.png)
+
+* Data Type
+
+![dtype](/Resources/DTYPE.png)
+
+* Null Data
+
+![null](/Resources/NULL.png)
+
+* Clean Duplicates
+
+![dup](/Resources/Screen%20Shot%202022-08-20%20at%2013.36.41.png)
 
 * San Francisco Restaurants Locations:
 
-![SFRest](/XXXXXX)
+![SFRest](/Resources/locations.png)
 
-* Scatter Plot
+* Clean Data Frame
 
-![Scatter1](/XXXXXX)
+![SFRest](/Resources/Cleandf.png)
 
 ## Questions to answer
 
@@ -67,38 +83,46 @@ EDA:
 
 *Readme with description:
 
-![Readme](/XXXXXX)
+![Readme](/Resources/readme.png)
 
 * Individual Branches
 
-![Branches](/XXXXXX)
+![Branches](/Resources/branches.png)
 
 # Machine Learning Model
 
 * Takes in data from the provisional database
 
-![ProvDB](/XXXXXX)
+![ProvDB](/Resources/provdata.png)
 
 * Outputs label for input data
 
 * Elbow Curve:
 
-![Elbow](/XXXXXX)
+![Elbow](/Resources/Elbow.png)
+
+* Data Clasification
+
+![Clasif](/Resources/Clasif.png)
 
 *Scatter Plots w & w/o Clusters and 3D:
 
-![Plotcluster](/XXXXXX)
-![Plot3d](/XXXXXX)
+![Plotcluster](/Resources/scatter1.png)
+![Plot3d](/Resources/scatter3d.png)
 
 # Database Integration
 
 * Sample data that mimics the expected final database structure or schema
 
-![DBDF](/XXXXXX)
+![DBDF](/Resources/prediction.png)
 
 * Draft machine learning model is connected to the provisional database
 
-![READCSV](/XXXXXX)
+![READCSV](/Resources/connection.png)
+
+* Example
+
+![Example](/Resources/mapprueba.png)
 
 # Other details of the project
 
