@@ -28,10 +28,12 @@ Our plattform schema:
 
 ![diagram](/Resources/diagram2.png)
 
-We selected San Francisco, California which is one of the most important touristic places in the world and is also rated as one of the World’s best cities.
+We selected first San Francisco, California which is one of the most important touristic places in the world and is also rated as one of the World’s best cities, but due we didn´t get enought data for a machine learning model, we changed to Philadelphia, Pennsilvania. 
+
+Philadelphia: 
 
 * More than 4,300 restaurants
-* Tourism: On 2022 it will receive around 21 million visitors
+* Tourism: On 2022 it will receive around 21 million visitors (36.2 million visitors in all )
 
 ### Presentation:
 
