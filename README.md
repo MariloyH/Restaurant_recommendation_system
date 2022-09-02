@@ -12,6 +12,8 @@ Travel is a fun activity, and we always want to enjoy that time to the fullest, 
 
 Another point to take in mind is who’s making the recommendations, we don´t all have a friend that lives in every city we visit, and for that reason this tool will be your local buddy, since our source of information will be obtained from data bases created by actual users, assuring no bias on our recommendations. 
 
+ 
+
 The Restaurant Recommendation System will discover data patterns by grouping two kinds of information:
 
     * Restaurant Data, by taking into account different variables like number. of ratings, number of reviews, type of cuisine and location. 
@@ -20,6 +22,9 @@ The Restaurant Recommendation System will discover data patterns by grouping two
 
 These Machine Learning algorithms will cluster information from a huge pool of data, by grouping it based on patterns in the data set with the input of consumer choices and restaurant information; producing outcomes that co-relate to their needs and interests.
 
+A recommender system suggest relevant items to user. To achieve this task, there exist two major categories of methods : collaborative filtering methods and content based methods. We will use the first one:
+
+ Collaborative methods for recommender systems are methods that are based solely on the past interactions recorded between users and items in order to produce new recommendations. These interactions are stored in the so-called “user-item interactions matrix”. That´s why  the main idea that rules collaborative methods is that these past user-item interactions are sufficient to detect similar users and/or similar items and make predictions based on these estimated proximities. The main advantage of collaborative approaches is that they require no information about users or items and, so, they can be used in many situations. Moreover, the more users interact with items the more new recommendations become accurate: for a fixed set of users and items, new interactions recorded over time bring new information and make the system more and more effective.
 In conclusion this project will be a traveler solution platform to help resolve part of the traveler issues by enhancing the experience to the fullest with less effort and time investment.
 
 # Name: Foodiefy – Recommendations from your local digital buddy 
@@ -143,3 +148,10 @@ EDA:
    Python libraries
    Scikit-learn libraries
    Plotly
+
+References: 
+Roca, Baptiste. Introduction to Recommender Systems.TowardsDataScience.com. Available at https://towardsdatascience.com/introduction-to-recommender-systems-6c66cf15ada.  Published Jun 2,2019
+
+Jeremiah, Teo. How to build a Restaurant Recommendation System Using Latent Factor Collaborative Filtering. TowardsDataScience.com
+Available at https://towardsdatascience.com/how-to-build-a-restaurant-recommendation-system-using-latent-factor-collaborative-filtering-ffe08dd57dca. Published Nov 29, 2019
+
