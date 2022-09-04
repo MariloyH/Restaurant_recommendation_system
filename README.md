@@ -30,10 +30,6 @@ Our plattform schema:
 
 We selected first San Francisco, California which is one of the most important touristic places in the world and is also rated as one of the World’s best cities, but due we didn´t get enought data for a machine learning model, we changed to Philadelphia, Pennsilvania. 
 
-San Francisco: 
-
-* More than 4,300 restaurants
-* Tourism: On 2022 it will receive around 21 million visitors (36.2 million visitors in all )
 
 ### Presentation and Dashboard:
 
@@ -49,99 +45,4 @@ According to Yelp site, it is platform with trusted local business information, 
 
 We will use two Yelp Fusion API, which allows to get local content and user reviews from millions of businesses across 32 countries. 
 
-Databases Used:
 
-* Business Search
-* Reviews
-
-EDA:
-
-* Number of ratings:
-
-![rating](/Resources/rating.png)
-
-* Top Eleven Restaurants:
-
-![Topeleven](/Resources/topeleven.png)
-
-* Data Type
-
-![dtype](/Resources/DTYPE.png)
-
-* Null Data
-
-![null](/Resources/NULL.png)
-
-* Clean Duplicates
-
-![dup](/Resources/Screen%20Shot%202022-08-20%20at%2013.36.41.png)
-
-* San Francisco Restaurants Locations:
-
-![SFRest](/Resources/locations.png)
-
-* Clean Data Frame
-
-![SFRest](/Resources/Cleandf.png)
-
-## Questions to answer
-
-1.	Can I obtain a recommendation of the best Restaurants near my location? (Lat & Long)?
-2.	Can that recommendation be “real” and not have a bias from maybe the own restaurants?
-3.	Can that recommendation be streamlined based on important preferences to me?
-
-# GitHub Repository
-
-*Readme with description:
-
-![Readme](/Resources/readme.png)
-
-* Individual Branches
-
-![Branches](/Resources/branches.png)
-
-# Machine Learning Model
-
-* Takes in data from the provisional database
-
-![ProvDB](/Resources/provdata.png)
-
-* Outputs label for input data
-
-* Elbow Curve:
-
-![Elbow](/Resources/Elbow.png)
-
-* Data Clasification
-
-![Clasif](/Resources/Clasif.png)
-
-*Scatter Plots w & w/o Clusters and 3D:
-
-![Plotcluster](/Resources/scatter1.png)
-![Plot3d](/Resources/scatter3d.png)
-
-# Database Integration
-
-* Sample data that mimics the expected final database structure or schema
-
-![DBDF](/Resources/prediction.png)
-
-* Draft machine learning model is connected to the provisional database
-
-![READCSV](/Resources/connection.png)
-
-* Example
-
-![Example](/Resources/mapprueba.png)
-
-# Other details of the project
-
-*Technologies*
-   Python API's
-   AWS 
-
-*Tools*
-   Python libraries
-   Scikit-learn libraries
-   Plotly
