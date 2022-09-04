@@ -40,9 +40,11 @@ San Francisco:
 * More than 4,300 restaurants
 * Tourism: On 2022 it will receive around 21 million visitors (36.2 million visitors in all )
 
-### Presentation:
+### Presentation and Dashboard:
 
 View our presentation here: <a href='https://docs.google.com/presentation/d/1ZlSZUL6SJBcRnLjmMwqcynuWotso9JrDRmxAZ9-IRTA/edit#slide=id.p1{/google_docs'> Recommendation System </a>
+
+View our Dashboard in Tableau Public here:  <a href='https://public.tableau.com/app/profile/karla.plazas/viz/Foofiefy_Dashboard/Foodiefy?publish=yes'> Foodiedy Dashboard </a>
 
 ## Description of the source of data
 
