@@ -37,12 +37,40 @@ View our presentation here: <a href='https://docs.google.com/presentation/d/1ZlS
 
 View our Dashboard in Tableau Public here:  <a href='https://public.tableau.com/app/profile/karla.plazas/viz/Foofiefy_Dashboard/Foodiefy?publish=yes'> Foodiedy Dashboard </a>
 
-## Description of the source of data
+## Description of data processing
 
-Yelp.com
+* Source of data: Yelp.com
 
 According to Yelp site, it is platform with trusted local business information, photos and review content, that provides a one-stop local platform for consumers to discover, connect and transact with local businesses of all sizes by making it easy to request a quote, join a waitlist or make a reservation, and make an appointment or purchase.
 
 We will use two Yelp Fusion API, which allows to get local content and user reviews from millions of businesses across 32 countries. 
+
+* Data Preprocessing
+
+Kaggle / Yelp Database had 5 databases from were we selected two: 
+
+yelp_academic_dataset_business.json (businesses information)
+yelp_academic_dataset_review.json (reviews from businesses)
+ 
+This big data sets (more than 4GB) included information from distinct types of business like SPA`s, GYMS, among others (160,585 registers). It included information from several states of the US and Canada, like: Texas, Florida, Georgia, Ohio, Colorado, Oregon, Vancouver and Pennsylvania.
+
+We chose Pennsylvania more specifically Philadelphia since it had one of the most robust data sets 
+
+From Pennsylvania dataset we used Pyspark to clean the data base filtering only information from Philadelphia and obtain only restaurants as businesses from both databases. From reviews data set we used only use relevant columns of information that allowed us to build the data frame, actually we made the same selection pricess for Business data base. Finally we filtered unique restaurants and obtained the 1,000 restaurants with the higher number of reviews (popularity)
+
+*Feature Engineering and selection
+
+We used 2 Unsupervised Machine Learning Models to solve this  problem: One for the restaurant location and other for the recommendations.
+
+1. First we take the user’s position and number of reviews to search the nearest restaurants around him. For that location restaurant recommendation we selected from all the data set: Lat, Long, No. of reviews, stars, name and Business ID. 
+
+2. With that list, we use a NLP matrix to analyze the reviews that  matches the user’s preferences. For recommendation based on user Phrase, we imported the clean data base (cleaned on database creation), then cleaned reviews words by removeing punctuation and stop words so we obtained one string per user review
+
+3,Finally, we show a map with the best selection.
+
+* Data Split for training and testing
+
+Data for training and testing on our ML model was mainly selected from the word processing. It’s important to take in mind that we are using unsupervised ML algorithms to cluster filter and deliver a recommendation, for that reason test and learn is only a reference.
+
 
 
