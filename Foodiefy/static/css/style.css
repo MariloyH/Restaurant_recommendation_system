@@ -1,0 +1,13 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: white ;
+  font-weight: 600;
+  }
+
+.jumbotron {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5877c8d959cc68088d493a35/1611787385983-5RG1ZGF4PSFQ97JT3PYZ/Lower+Banner.png?format=2500w;');
+    /*background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/bd/Philadelphia_banner.jpg');*/
+    background-size: 100% 100%;
+    text-align: center;
+    color:black
+}

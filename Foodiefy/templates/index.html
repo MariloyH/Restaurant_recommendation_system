@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Se agrego toda esta info-->
+    <title>Foodiefy</title>
+    <link rel="icon" href="../static/images/foodie.png">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script src="../static/js/app.js"></script>  
+    <style>
+      body { margin: 0; padding: 0; font-family: 'Poppins', sans-serif;}
+      #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+      </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!--Fin de información agregada-->
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+     <!-- Google font-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<style>
+  #loading {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+
+  @keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+</style>
+<body class="bg-dark">
+    <!--Incio de agregado de informacion-->
+    <div class="wrapper">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+          <a class="navbar-brand" href="index_try.html">Foodiefy</a>
+        </nav>  
+        <!--  JUMBOTRON -->
+        <div class="jumbotron">
+          <h1 class="display-4">Foodiefy</h1>
+           <h3></h3>
+        </div>
+
+        <!-- TITLE AND PARAGRAPH-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Recommendations from your digital local buddy! </h2>
+              <h3>Philadelphia, Pennsylvania<br></h3>
+              
+              <h5> Follow the instructions: </h5>
+          </div>
+          <div class="col-md-8">
+            <p>Travel is a fun activity, and we always want to enjoy that time to the fullest, including the food experience. That is when a friend recommendation is worthy, and that's why this App is for! </p>
+            <p>We will give you the nearest top rated restaurants according your personal preferences, based in thounsand of other users recommendations
+              assuring no bias, since we do not consider the advertising of the business itself for our recommendations. Let your digital local buddy  find options for ypu  and enjoy your trip! </p>
+            <div id="user-wait" style="display: none;">
+              <h1><div id="loading"></div> Please wait while we fetch your recommendations.</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  FORM -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="filters">
+              <form class="bg-dark"> 
+                <ul class="list-group">
+                  <!-- Catch preferences-->
+                  <li class="list-group-item bg-dark">
+                    <label for="keyword">Let us know what you're looking for your foodxperience! Please give us at least 3 words</label>
+                    <input type="text" id="keywords" class="form-control" placeholder="Italian, pasta, pizza" />
+                  </li>
+                  <!-- Catch  coordinates-->
+                  <li class="list-group-item bg-dark">
+                    <label for="coordinates">Where are you now? Select your location in the map and the values will be displayed automatically. </label>
+                    <label for="coordinates1">Latitude</label>
+                    <input type="text" id="coordinates1" class="form-control" placeholder=""  readonly/>
+                    <label for="coordinates2">Longitude</label>
+                    <input type="text" id="coordinates2" class="form-control" placeholder="" readonly/>
+                  </li> 
+                  <button type="button" onclick="sendInformation()" class="btn btn-primary btn-lg"> Submit </button>
+                  <button onClick="window.location.reload();">Refresh Page</button>
+                    <div class="text-center">
+                       <!--AGREGAR CODIGO de cuando se mande la información-->
+                      <!-- <button class="button">Recommend me!</button> --> 
+                      <h5> <br>Local time: <span id="time"> </span></h4>
+                      <script src="../static/js/app.js">   </script> 
+                    </div> 
+                </ul>
+              </form>
+            </div>                   
+          </div>
+
+        <!-- TABLE, el primero div no se ha cerrado-->
+          <div class="col-md-8">
+            <table class="table table-striped">
+              <!--<thead> -->
+                <input type="text" id="coords" class="form-control" placeholder="Select your location to obtain your coordinates" readonly />
+                    <meta charset="utf-8">
+                    <title>Get coordinates of the mouse pointer</title>
+                    
+                   <!--- <body>  -->
+                      <style type="text/css">
+                          #info {
+                            display: table;
+                            position: relative;
+                            margin: 0px auto;
+                            word-wrap: anywhere;
+                            white-space: pre-wrap;
+                            padding: 10px;
+                            border: none;
+                            border-radius: 3px;
+                            font-size: 12px;
+                            text-align: center;
+                            color: #222;
+                            background: #fff;  }
+
+                            html,
+                            body,
+                            #mapid {
+                            width: 100%;
+                            height: 100%;
+                            padding: 0;
+                            margin: 0; }
+                      </style>
+  
+    <!--Fin de agregado de información -->
+
+            <!-- The div that holds our map -->
+            <div id="mapid"></div>  
+
+            <!-- Leaflet JavaScript -->
+            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+            <pre id="info"></pre>
+    
+        <script>
+        // Create the map object with the center of Philadelphia and zoom level.
+            let map = L.map("mapid", {
+            center: [ 39.94, -75.16],
+                zoom: 12 });
+
+            // We create the tile layer that will be the background of our map.
+            let streets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+            attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            accessToken: 'pk.eyJ1IjoiYW50b241MDUiLCJhIjoiY2w0bjVuamY2MTQyNjNpbHh0MTV4cnRqcSJ9.55yav3fmjV9ZCGHiHnW16A'
+                        });
+            // Then we add our tile layer to the map.
+            streets.addTo(map);   
+            
+            //Get coordinates when clicking map
+            map.on('click', function(e) {
+
+                                var latitud = e.latlng.lat;
+                                var longitud = e.latlng.lng;
+
+                            //Show longitude and latitude into the form
+                            document.getElementById('coordinates1').value = latitud;
+                            document.getElementById('coordinates2').value = longitud;
+
+                            // Add marker to map at click location; add popup window
+                            var marker;
+                            map.on('click', function (e) {
+                                if (marker) {
+                                    map.removeLayer(marker);
+                                }
+                            marker = new L.marker(e.latlng).addTo(map);
+                            });                        
+                      });
+            
+            //Create function to send information to Flask
+            var userinfo = {};
+            function sendInformation(){
+                let latitude = document.getElementById("coordinates1").value
+                let longitude = document.getElementById("coordinates2").value
+                let words = document.getElementById("keywords").value
+                userinfo = {latitude, longitude, words} //create a dictionary to store the variables
+
+                var s = JSON.stringify(userinfo); //pass the dictionary into json format
+   
+                $("#user-wait").show(250)
+                $.ajax ({
+                    url:"/test", //the route where the data will be send
+                    type:'POST', 
+                    contentType: "application/json",
+                    data: JSON.stringify(s),
+                    success: function(data) {
+
+                      var  geojsonMarkerOptions = {
+                        'radius':6,
+                        'opacity': .5,
+                        'color': "black",
+                        'fillColor':  "red",
+                        'fillOpacity': 0.8
+                      };
+
+                      function forEachFeature(feature, layer) {
+                        var popupContent = "<p>The restaurant <b>" +
+                                            feature.properties.name + "</b> ,</br> " +
+                                            feature.properties.description + "</br> Rating "+
+                                            feature.properties.rating ;
+                        if (feature.properties && feature.properties.popupContent) {
+                          popupContent += feature.properties.popupContent;
+                        }
+                        layer.bindPopup(popupContent);
+                      };
+
+                      var top7 = L.geoJSON(JSON.parse(data), {
+                                  onEachFeature: forEachFeature, 
+                                  pointToLayer: function (feature, latlng) {
+                                      return L.circleMarker(latlng, geojsonMarkerOptions);
+                                  }
+                                });
+
+                        top7.addTo(map)
+                        $("#user-wait").hide(500)
+                    }
+
+                });
+
+
+            };
+
+            </script>
+            </table>
+        </div>
+</body>
+</html>
