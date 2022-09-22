@@ -1,11 +1,12 @@
-# Data Analytics BootCamp Final Project.
+# Foddiefy: Restaurant Recommedator System
 
-Presentation
+Team:
+Karla Plazas 
+Mariloy Hernandez 
+Jesus Antonio
+Jesus Molina 
 
-## Selected Topic
-
-Restaurant Recommendation System
-
+# Presentation
 ## Reason Why?
 
 Travel is a fun activity, and we always want to enjoy that time to the fullest, including the food experience. We know that there are plenty sources of information that can give us options of restaurants or places we can visit, review the location and even read reviews but that’s hard work and also time consuming. For that reason, we will develop a solution that will give the user recommendations of the best restaurant options based on ratings and comments of other visitors taking into consideration their location in order to assure that these options are not only good but also close to them. Our solution will also consider their specific preferences to make sure every detail of the experience is based on what they like and in consequence get the most of it.
