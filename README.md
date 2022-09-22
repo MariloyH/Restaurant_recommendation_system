@@ -1,10 +1,14 @@
 # Foddiefy: Restaurant Recommedator System
 
 Team:
-Karla Plazas 
+Karla Plazas
+
 Mariloy Hernandez 
+
 Jesus Antonio
-Jesus Molina 
+
+Jesus Molina
+
 
 # Presentation
 ## Reason Why?
