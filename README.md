@@ -1,7 +1,8 @@
 # Foddiefy: Restaurant Recommedator System
 
 Team:
-Karla Plazas
+
+Karla Plazas 
 
 Mariloy Hernandez 
 
