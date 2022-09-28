@@ -21,7 +21,7 @@ Travel is a fun activity, and we always want to enjoy that time to the fullest, 
 
 Another point to take in mind is who’s making the recommendations, we don´t all have a friend that lives in every city we visit, and for that reason this tool will be your local buddy, since our source of information will be obtained from data bases created by actual users, assuring no bias on our recommendations. 
 
-<img width="452" alt="Captura de Pantalla 2022-09-27 a la(s) 14 03 53" src="https://user-images.githubusercontent.com/102195803/192878255-6281c035-4074-4d23-9f53-d27f3d27d292.png">
+<img width="330" alt="Captura de Pantalla 2022-09-27 a la(s) 14 03 53" src="https://user-images.githubusercontent.com/102195803/192878255-6281c035-4074-4d23-9f53-d27f3d27d292.png">
 
 The Restaurant Recommendation System will discover data patterns by grouping two kinds of information:
 
