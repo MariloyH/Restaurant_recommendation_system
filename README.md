@@ -11,12 +11,17 @@ Jesus Antonio
 Jesus Molina
 
 
+
 # Presentation
 ## Reason Why?
 
 Travel is a fun activity, and we always want to enjoy that time to the fullest, including the food experience. We know that there are plenty sources of information that can give us options of restaurants or places we can visit, review the location and even read reviews but that’s hard work and also time consuming. For that reason, we will develop a solution that will give the user recommendations of the best restaurant options based on ratings and comments of other visitors taking into consideration their location in order to assure that these options are not only good but also close to them. Our solution will also consider their specific preferences to make sure every detail of the experience is based on what they like and in consequence get the most of it.
 
+<img width="660" alt="Captura de Pantalla 2022-09-27 a la(s) 14 20 43" src="https://user-images.githubusercontent.com/102195803/192878036-fcef8f2d-09c7-4dd0-9fbc-6e97f66e1e4b.png">
+
 Another point to take in mind is who’s making the recommendations, we don´t all have a friend that lives in every city we visit, and for that reason this tool will be your local buddy, since our source of information will be obtained from data bases created by actual users, assuring no bias on our recommendations. 
+
+<img width="452" alt="Captura de Pantalla 2022-09-27 a la(s) 14 03 53" src="https://user-images.githubusercontent.com/102195803/192878255-6281c035-4074-4d23-9f53-d27f3d27d292.png">
 
 The Restaurant Recommendation System will discover data patterns by grouping two kinds of information:
 
@@ -27,6 +32,8 @@ The Restaurant Recommendation System will discover data patterns by grouping two
 These Machine Learning algorithms will cluster information from a huge pool of data, by grouping it based on patterns in the data set with the input of consumer choices and restaurant information; producing outcomes that co-relate to their needs and interests.
 
 In conclusion this project will be a traveler solution platform to help resolve part of the traveler issues by enhancing the experience to the fullest with less effort and time investment.
+
+<img width="660" alt="Captura de Pantalla 2022-09-27 a la(s) 14 23 48" src="https://user-images.githubusercontent.com/102195803/192878345-ec23c00b-df62-4856-af3d-0dc3fd288219.png">
 
 # Name: Foodiefy – Recommendations from your local digital buddy 
 
